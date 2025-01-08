@@ -6,7 +6,7 @@
     "auto_install": True,
     "application": False,
     "license": "LGPL-3",
-    "author": "Open Net Sàrl",
+    "author": "MCO2, Open Net Sàrl",
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
     "website": "https://github.com/sustainability-suite/sustainability-odoo-enterprise",
