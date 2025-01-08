@@ -6,7 +6,7 @@
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
     "category": "Accounting/Sustainability",
-    "website": "https://www.open-net.ch",
+    "website": "https://github.com/sustainability-suite/sustainability-odoo-enterprise",
     "depends": ["account_asset", "sustainability"],
     "data": [
         "views/account_asset.xml",
