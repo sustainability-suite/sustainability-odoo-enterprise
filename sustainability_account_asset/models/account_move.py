@@ -8,8 +8,8 @@ class AccountMove(models.Model):
     def _prepare_move_for_asset_depreciation(self, vals):
         res = super()._prepare_move_for_asset_depreciation(vals)
 
-        """ This method should be called only in draft mode,
-         so we will use original_value """
+        # This method should be called only in draft mode,
+        # so we will use original_value
         asset = self.env["account.asset"].browse(res["asset_id"])
         total_carbon_debt = asset.carbon_debt
         total_amount = asset.original_value
