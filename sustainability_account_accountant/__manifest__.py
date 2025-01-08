@@ -9,7 +9,7 @@
     "author": "MCO2, Open Net Sàrl",
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/sustainability-suite/sustainability-odoo-enterprise",
     "depends": ["sustainability", "account_accountant"],
     "assets": {
         "web.assets_backend": [],

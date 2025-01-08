@@ -8,10 +8,10 @@
       <field name="arch" type="xml">
         <xpath expr="//group[@name='asset_values']" position="inside">
           <field
-            name="carbon_debt"
-            widget="monetary"
-            options="{'currency_field': 'carbon_currency_id'}"
-          />
+                        name="carbon_debt"
+                        widget="monetary"
+                        options="{'currency_field': 'carbon_currency_id'}"
+                    />
           <field name="carbon_currency_id" invisible="1" />
         </xpath>
       </field>

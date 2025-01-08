@@ -16,10 +16,10 @@
               </i>
             </div>
             <field
-              name="carbon_lock_date"
-              placeholder="Pick a date to lock"
-              options="{'datepicker': {'warn_future': true}}"
-            />
+                            name="carbon_lock_date"
+                            placeholder="Pick a date to lock"
+                            options="{'datepicker': {'warn_future': true}}"
+                        />
           </group>
         </xpath>
       </field>
