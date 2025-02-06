@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * sustainability_account_accountant
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-22 12:17+0000\n"
+"PO-Revision-Date: 2024-12-22 12:17+0000\n"
+"Last-Translator: Nico Darnis (nico-darnis)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sustainability_account_accountant
+#: model_terms:ir.ui.view,arch_db:sustainability_account_accountant.view_account_change_lock_date
+msgid ""
+"<i>\n"
+"                                Prevent CO2\n"
+"                                <sub>e</sub>\n"
+"                                computation for journal entries\n"
+"                            </i>"
+msgstr ""
+"<i>\n"
+"                                Empêcher le calcul du CO2\n"
+"                                <sub>e</sub>\n"
+"                                pour les écritures comptables\n"
+"                            </i>"
+
+#. module: sustainability_account_accountant
+#: model_terms:ir.ui.view,arch_db:sustainability_account_accountant.view_account_change_lock_date
+msgid "CO2 Period Closing"
+msgstr "Clôture CO2 de la période"
+
+#. module: sustainability_account_accountant
+#: model:ir.model.fields,field_description:sustainability_account_accountant.field_account_change_lock_date__carbon_lock_date
+msgid "CO2e Computation Lock Date"
+msgstr "Date de verrouillage du calcul du CO2e"
+
+#. module: sustainability_account_accountant
+#: model:ir.model,name:sustainability_account_accountant.model_account_change_lock_date
+msgid "Change Lock Date"
+msgstr "Changer la date de verrouillage"
+
+#. module: sustainability_account_accountant
+#: model_terms:ir.ui.view,arch_db:sustainability_account_accountant.view_account_change_lock_date
+msgid "Pick a date to lock"
+msgstr "Choisissez une date de verrouillage"
+
+#. module: sustainability_account_accountant
+#: model:ir.model.fields,help:sustainability_account_accountant.field_account_change_lock_date__carbon_lock_date
+msgid "Prevents CO2e computation on entries prior to the defined date."
+msgstr "Empêche le calcul du CO2e sur les écritures antérieures à la date définie."
