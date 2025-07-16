@@ -9,12 +9,12 @@ class AccountChangeLockDate(models.TransientModel):
     _inherit = "account.change.lock.date"
 
     carbon_lock_date = fields.Date(
-        string="CO2e Computation Lock Date",
+        string="Lock CO2e Computation",
         default=lambda self: self.env.company.carbon_lock_date,
         help="Prevents CO2e computation on entries prior to the defined date.",
     )
 
-    def _prepare_lock_date_values(self):
-        res = super()._prepare_lock_date_values()
+    def _prepare_lock_date_values(self, exception_vals_list=None):
+        res = super()._prepare_lock_date_values(exception_vals_list)
         res.update({"carbon_lock_date": self.carbon_lock_date})
         return res

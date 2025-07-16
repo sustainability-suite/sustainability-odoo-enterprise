@@ -9,20 +9,14 @@
         />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='fiscalyear_lock_date']/.." position="after">
-                <group string="CO2 Period Closing">
-                    <div class="text-muted mb-3" colspan="2">
-                        <i>
-                            Prevent CO2
-                            <sub>e</sub>
-                            computation for journal entries
-                        </i>
-                    </div>
+                <label for="carbon_lock_date" />
+                <div class="d-flex">
                     <field
                         name="carbon_lock_date"
                         placeholder="Pick a date to lock"
                         options="{'datepicker': {'warn_future': true}}"
                     />
-                </group>
+                </div>
             </xpath>
         </field>
     </record>
