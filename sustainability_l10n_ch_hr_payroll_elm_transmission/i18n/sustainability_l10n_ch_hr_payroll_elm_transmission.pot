@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sustainability_l10n_ch_hr_payroll_elm_transmission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20250710\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-29 13:40+0000\n"
+"PO-Revision-Date: 2025-07-29 13:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sustainability_l10n_ch_hr_payroll_elm_transmission
+#. odoo-python
+#: code:addons/sustainability_l10n_ch_hr_payroll_elm_transmission/models/hr_employee.py:0
+msgid "Commuting"
+msgstr ""
+
+#. module: sustainability_l10n_ch_hr_payroll_elm_transmission
+#: model:ir.model,name:sustainability_l10n_ch_hr_payroll_elm_transmission.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: sustainability_l10n_ch_hr_payroll_elm_transmission
+#. odoo-python
+#: code:addons/sustainability_l10n_ch_hr_payroll_elm_transmission/models/hr_employee.py:0
+msgid "Sustainability"
+msgstr ""

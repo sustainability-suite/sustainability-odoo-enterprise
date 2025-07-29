@@ -3,7 +3,9 @@
 
 import copy
 
-from odoo import api, models
+from lxml import etree
+
+from odoo import _, api, models
 
 
 class HrEmployee(models.Model):
@@ -17,8 +19,34 @@ class HrEmployee(models.Model):
         """
         arch, view = super()._get_view(view_id, view_type, **options)
         if view_type == "form":
-            for commuting_node in arch.xpath("//page[@name='commuting_settings']"):
-                new_node = copy.deepcopy(commuting_node)
-                new_node.set("name", "commuting_settings_l10n_ch")
-                arch.xpath("//notebook")[0].append(new_node)
+            for commuting_page in arch.xpath("//page[@name='commuting_settings']"):
+                # Copy the Commuting page
+                new_page = copy.deepcopy(commuting_page)
+                new_page.set("name", "commuting_settings_l10n_ch")
+                new_page.set("string", _("Sustainability"))
+
+                # Add a group around the carbon_commuting_ids field
+                new_page.append(
+                    etree.Element(
+                        "group",
+                        attrib={
+                            "string": _("Commuting"),
+                            "name": "sustainability_commuting",
+                        },
+                    )
+                )
+                new_page.xpath("//group[@name='sustainability_commuting']")[0].append(
+                    new_page.xpath("//field[@name='carbon_commuting_ids']")[0]
+                )
+                new_page.xpath("//field[@name='carbon_commuting_ids']")[0].set(
+                    "nolabel", "1"
+                )
+
+                # Add Remote Work group
+                if group_remote_work := arch.xpath(
+                    "//field[@name='monday_location_id']/.."
+                ):
+                    new_page.append(group_remote_work[0])
+
+                arch.xpath("//notebook")[0].append(new_page)
         return arch, view

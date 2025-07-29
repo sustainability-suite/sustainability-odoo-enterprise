@@ -3,7 +3,7 @@
 
 {
     "name": "Sustainability CH HR Payroll ELM Transmission",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "author": "MCO2, Open Net Sàrl",
     "maintainers": ["bonnetadam"],
     "development_status": "Production/Stable",
